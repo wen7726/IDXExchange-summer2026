@@ -1,25 +1,48 @@
-cat > notes/week0-database-import.md <<'EOF'
-# Week 0 Database Import
+# Week 0 - Environment Setup
 
-## Status
+## Objectives
 
-Imported both required MLS datasets into local MySQL database `idx_exchange`.
+- Install OpenClaw
+- Configure development environment
+- Import MLS databases
+- Prepare local development workflow
 
-## Imported Tables
-
-| Table | Row Count |
-|---|---:|
-| rets_property | 53,122 |
-| california_sold | 87,157 |
-
-## Notes
-
-The imported row counts are lower than the handbook reference counts. Need to confirm whether the provided SQL files are sample datasets or partial exports.
+---
 
 ## Completed
 
-- Created local MySQL database: `idx_exchange`
+### OpenClaw
+- Cloned the OpenClaw repository
+- Installed Node.js
+- Installed project dependencies with npm
+- Verified OpenClaw installation
+
+### Database
+- Installed MySQL
+- Created the `idx_exchange` database
 - Imported `rets_property.sql`
 - Imported `california_sold.sql`
-- Verified row counts
-EOF
+- Verified database import
+
+Current row counts:
+
+| Table | Rows |
+|-------|------:|
+| rets_property | 53,122 |
+| california_sold | 87,157 |
+
+---
+
+## Notes
+
+The imported row counts are lower than those listed in the internship handbook. I will confirm whether the provided SQL files are partial datasets or sample exports.
+
+---
+
+## Next Steps
+
+- Configure Python virtual environment
+- Configure `.env`
+- Add API keys
+- Configure WhatsApp
+- Complete Week 0 deliverables
