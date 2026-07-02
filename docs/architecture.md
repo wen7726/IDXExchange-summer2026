@@ -24,7 +24,7 @@ flowchart LR
     C --> B
     B --> A
 
-
+```
 
 ## Key Components:
 
