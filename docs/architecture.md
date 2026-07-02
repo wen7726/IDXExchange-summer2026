@@ -79,8 +79,8 @@ Flow:
 
 ## Week 1 Deliverable Status
 
-* ✅ OpenClaw runtime understood
-* ✅ WhatsApp channel tested
-* ✅ Gateway verified
-* ✅ MySQL database imported
-* ✅ Architecture workflow documented
+* OpenClaw runtime understood
+* WhatsApp channel tested
+* Gateway verified
+* MySQL database imported
+* Architecture workflow documented
