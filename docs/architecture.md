@@ -26,7 +26,7 @@ flowchart LR
 
 
 
-Key Components:
+## Key Components:
 
 Component                       Role
 
@@ -49,7 +49,7 @@ Memory                  Stores session context and long-term information
 MySQL                   Stores MLS datasets used by the agent
 
 
-MLS Databases：
+## MLS Databases：
 
 Table                          Purpose                             Imported Rows
 
@@ -58,7 +58,7 @@ rets_property           Active property listings                        53,122
 california_sold         Sold comps and market analytics                 87,157
 
 
-Example Query Flow
+## Example Query Flow
 
 User sends:
 
@@ -77,7 +77,7 @@ Flow:
 9. Memory stores the interaction.
 10. WhatsApp sends the reply to the user.
 
-Week 1 Deliverable Status
+## Week 1 Deliverable Status
 
 * ✅ OpenClaw runtime understood
 * ✅ WhatsApp channel tested
