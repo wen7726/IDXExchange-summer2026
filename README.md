@@ -1,93 +1,82 @@
-# IDXExchange-summer2026
-IDX Exchange Summer 2026
+# AI Agentic Engineer Intern | IDX Exchange (Summer 2026)
 
-Overview
+## Overview
 
-This repository documents my work and progress throughout the IDX Exchange AI Agentic Engineer Internship (Summer 2026).
+This repository documents my work as an AI Agentic Engineer Intern at IDX Exchange during Summer 2026.
 
-During this internship, I will build production-ready AI agents using OpenClaw, MySQL, Retrieval-Augmented Generation (RAG), semantic search, and multi-agent orchestration for real estate applications.
+Throughout the internship, I am learning how to build AI agents with OpenClaw, integrate MLS databases, and develop natural language search and retrieval systems for real estate applications. Each week focuses on a different part of the production pipeline, from system architecture to database integration and conversational AI.
 
-⸻
+---
 
-Objectives
+## Tech Stack
 
-* Learn the OpenClaw framework
-* Build production AI agents
-* Integrate MySQL databases with AI workflows
-* Implement semantic search using embeddings
-* Develop Retrieval-Augmented Generation (RAG)
-* Build multi-agent systems
-* Deploy AI assistants for real-world use cases
+- OpenClaw
+- TypeScript
+- Node.js
+- Python
+- MySQL
+- OpenAI API
+- Git & GitHub
 
-⸻
+---
 
-Project Structure:
+## Repository Structure
 
+```text
 IDXExchange-summer2026/
-│
-├── data/          # MLS SQL datasets (not tracked by Git)
-├── docs/          # Architecture diagrams and documentation
-├── handbook/      # Internship handbook
-├── notes/         # Weekly notes and meeting summaries
-├── openclaw/      # OpenClaw framework
-├── src/           # Personal experiments and utilities
-└── README.md
+├── README.md                     # Project overview
+├── data/                         # Local MLS SQL datasets (not tracked)
+├── docs/
+│   └── architecture.md           # System architecture documentation
+├── handbook/                     # Internship handbook
+├── notes/
+│   ├── week0.md                  # Environment setup
+│   ├── week1.md                  # OpenClaw architecture
+│   └── week2.md                  # Property search parser
+├── openclaw/                     # Local OpenClaw framework
+└── src/
+    └── week2-property-search/
+        ├── parser.ts             # Natural language parser
+        └── parser.test.ts        # Test queries
+```
 
-Progress
+---
 
-Week 0 – Environment Setup
+## Progress
 
-Completed:
+### ✅ Week 0 – Environment Setup
 
-* Repository created
-* Node.js installed
-* npm installed
-* OpenClaw cloned
-* OpenClaw dependencies installed
-* OpenClaw installation verified
-* MLS SQL datasets prepared
+- Set up development environment
+- Installed OpenClaw
+- Prepared MLS datasets
+- Configured project structure
 
-In Progress:
+### ✅ Week 1 – OpenClaw Architecture
 
-* MySQL installation and configuration
-* Database import
-* Environment variable configuration
+- Learned the OpenClaw workflow
+- Verified WhatsApp integration
+- Imported MLS databases
+- Created architecture documentation
 
-⸻
+### ✅ Week 2 – Natural Language Property Search
 
-Tech Stack
+- Built a TypeScript parser
+- Extracted property search filters using regex
+- Parsed prices, bedrooms, bathrooms, HOA fees, pools, and views
+- Tested the parser with 10+ natural language queries
 
-* OpenClaw
-* Node.js
-* TypeScript
-* Python
-* MySQL
-* OpenAI API
-* Git & GitHub
+---
 
-⸻
+## Upcoming Work
 
-Weekly Goals
+- Week 3 – Database Integration
+- Week 4 – Conversational Agent
+- Week 5 – Market Analytics
+- Week 6 – Embeddings & Semantic Search
+- Week 7+ – RAG, Multi-Agent Systems, and Production AI Workflows
 
-* Week 0 – Environment Setup
-* Week 1 – OpenClaw Fundamentals
-* Week 2 – Natural Language Property Search
-* Week 3 – Database Integration
-* Week 4 – Conversational Agent
-* Week 5 – Market Analytics
-* Week 6 – Embeddings & Vector Search
-* Week 7 – Recommendation Engine
-* Week 8 – Retrieval-Augmented Generation (RAG)
-* Week 9 – Multi-Agent Orchestration
-* Week 10 – WhatsApp Integration
-* Week 11 – Email Agent & Safety
-* Week 12 – Final Capstone
+---
 
-⸻
+## Notes
 
-Notes
-
-This repository is intended for educational purposes as part of the IDX Exchange AI Agentic Engineer Internship. Sensitive data such as SQL datasets, API keys, and environment variables are stored locally and are not committed to GitHub.
-
-⸻
-
+This repository is intended to document my internship progress and learning. Large datasets, API keys, and other sensitive files are stored locally and are not included in this repository.
