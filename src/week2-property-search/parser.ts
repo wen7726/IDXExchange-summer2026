@@ -48,7 +48,7 @@ export function parsePropertyQuery(query: string): PropertyFilters {
     baths: bathsMatch ? Number(bathsMatch[1]) : null,
     sqft: sqftMatch ? Number(sqftMatch[1].replace(/,/g, "")) : null,
     type: typeKey ? typeMap[typeKey] : null,
-    pool: /pool/i.test(query) ? "True" : null,
+    pool: /pool/i.test(query) ? "1" : null,
     hasView: /view/i.test(query) ? "True" : null,
     maxHOA: hoaMatch ? Number(hoaMatch[2].replace(/,/g, "")) : null,
   };
