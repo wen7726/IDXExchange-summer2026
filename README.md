@@ -65,6 +65,15 @@ IDXExchange-summer2026/
 - Parsed prices, bedrooms, bathrooms, HOA fees, pools, and views
 - Tested the parser with 10+ natural language queries
 
+### Week 3 – MLS Database Integration ✅
+
+- Connected OpenClaw to MySQL
+- Built parameterized SQL queries
+- Queried active listings
+- Queried sold comparables
+- Added pagination
+- Formatted property cards
+
 ---
 
 ## Upcoming Work

@@ -2,29 +2,49 @@
 
 ## Goal
 
-Connect the Week 2 natural language parser to the MLS databases using MySQL.
+Connect the natural language parser from Week 2 to the MLS databases using MySQL.
 
-## What I completed
+The workflow is:
 
-- Connected to MySQL using mysql2 connection pool
+User Query
+    ↓
+Natural Language Parser
+    ↓
+Structured Filters
+    ↓
+Parameterized SQL Query
+    ↓
+MySQL Database
+    ↓
+Formatted Property Results
+
+---
+
+## What I Completed
+
+- Connected to the MySQL MLS database using mysql2
+- Built a reusable database connection pool
 - Implemented parameterized SQL queries
 - Queried active listings from `rets_property`
 - Queried sold comparables from `california_sold`
-- Added pagination with LIMIT/OFFSET
+- Added pagination using LIMIT and OFFSET
 - Formatted query results into readable property cards
 
-## Challenge
+---
 
-The active listing search initially returned no results.
+## Example Query
 
-After checking the database with SQL queries, I found that `PoolPrivateYN` stores `"1"` instead of `"True"`.
+User Input
 
-I updated the parser to match the actual database values.
+Show me 3-bedroom condos in Irvine under $1.5M with a pool.
 
-## What I learned
+Parsed Filters
 
-- Parameterized SQL
-- MySQL connection pools
-- SQL debugging
-- Validating database values instead of making assumptions
-- Formatting query results for downstream AI agents
+```json
+{
+  "city": "Irvine",
+  "maxPrice": 1500000,
+  "beds": 3,
+  "type": "Condominium",
+  "pool": "1"
+}
