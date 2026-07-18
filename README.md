@@ -4,7 +4,7 @@
 
 This repository documents my work as an AI Agentic Engineer Intern at IDX Exchange during Summer 2026.
 
-Throughout the internship, I am learning how to build AI agents with OpenClaw, integrate MLS databases, and develop natural language search and retrieval systems for real estate applications. Each week focuses on a different part of the production pipeline, from system architecture to database integration and conversational AI.
+During the internship, I am building AI-powered real estate applications by combining natural language understanding, MLS database search, and conversational AI. The project progresses from system architecture and database integration to multi-turn conversations and intelligent property search.
 
 ---
 
@@ -13,7 +13,6 @@ Throughout the internship, I am learning how to build AI agents with OpenClaw, i
 - OpenClaw
 - TypeScript
 - Node.js
-- Python
 - MySQL
 - OpenAI API
 - Git & GitHub
@@ -24,20 +23,35 @@ Throughout the internship, I am learning how to build AI agents with OpenClaw, i
 
 ```text
 IDXExchange-summer2026/
-├── README.md                     # Project overview
-├── data/                         # Local MLS SQL datasets (not tracked)
+├── README.md
+├── data/                             # Local MLS SQL datasets (not tracked)
 ├── docs/
-│   └── architecture.md           # System architecture documentation
-├── handbook/                     # Internship handbook
+│   └── architecture.md
+├── handbook/
 ├── notes/
-│   ├── week0.md                  # Environment setup
-│   ├── week1.md                  # OpenClaw architecture
-│   └── week2.md                  # Property search parser
-├── openclaw/                     # Local OpenClaw framework
+│   ├── week0.md
+│   ├── week1.md
+│   ├── week2.md
+│   ├── week3.md
+│   └── week4.md
+├── openclaw/
 └── src/
-    └── week2-property-search/
-        ├── parser.ts             # Natural language parser
-        └── parser.test.ts        # Test queries
+    ├── week2-property-search/
+    │   ├── parser.ts
+    │   └── parser.test.ts
+    │
+    ├── week3-mls-database/
+    │   ├── db.ts
+    │   ├── search-active.ts
+    │   ├── search-sold.ts
+    │   ├── types.ts
+    │   └── run-tests.ts
+    │
+    └── week4-conversation/
+        ├── conversation.ts
+        ├── session.ts
+        ├── formatter.ts
+        └── test-conversation.ts
 ```
 
 ---
@@ -46,46 +60,101 @@ IDXExchange-summer2026/
 
 ### ✅ Week 0 – Environment Setup
 
-- Set up development environment
+- Configured development environment
 - Installed OpenClaw
 - Prepared MLS datasets
-- Configured project structure
+- Set up project structure
+
+---
 
 ### ✅ Week 1 – OpenClaw Architecture
 
-- Learned the OpenClaw workflow
-- Verified WhatsApp integration
-- Imported MLS databases
+- Explored OpenClaw architecture
+- Learned the AI agent workflow
+- Imported MLS datasets
 - Created architecture documentation
+
+---
 
 ### ✅ Week 2 – Natural Language Property Search
 
-- Built a TypeScript parser
-- Extracted property search filters using regex
-- Parsed prices, bedrooms, bathrooms, HOA fees, pools, and views
-- Tested the parser with 10+ natural language queries
+- Built a TypeScript property parser
+- Extracted search filters using regular expressions
+- Supported parsing for:
+  - City
+  - Price
+  - Bedrooms
+  - Bathrooms
+  - Property type
+  - HOA fees
+  - Pool
+  - View
+- Tested parser with multiple natural language queries
 
-### Week 3 – MLS Database Integration ✅
+---
 
-- Connected OpenClaw to MySQL
+### ✅ Week 3 – MLS Database Integration
+
+- Connected TypeScript application to MySQL
 - Built parameterized SQL queries
-- Queried active listings
-- Queried sold comparables
-- Added pagination
-- Formatted property cards
+- Implemented active listing search
+- Implemented sold comparable search
+- Added pagination support
+- Formatted property search results
+
+---
+
+### ✅ Week 4 – Multi-turn Conversational Search
+
+- Built conversation manager for property search
+- Implemented session management to preserve user preferences
+- Connected the Week 2 parser with the Week 3 MLS database search
+- Added follow-up questions for missing search criteria
+- Built a formatter for conversational property results
+- Created an end-to-end conversation test script
+- Successfully demonstrated:
+  - Multi-turn conversations
+  - Session memory
+  - SQL query generation
+  - MLS database search
+  - Property result formatting
+## Demo
+
+Week 4 supports a complete conversational property search workflow:
+
+```text
+User
+   │
+   ▼
+Natural Language Query
+   │
+   ▼
+Property Parser
+   │
+   ▼
+Conversation Session
+   │
+   ▼
+MLS Database Search
+   │
+   ▼
+Formatted Property Results
+```
 
 ---
 
 ## Upcoming Work
 
-- Week 3 – Database Integration
-- Week 4 – Conversational Agent
 - Week 5 – Market Analytics
 - Week 6 – Embeddings & Semantic Search
-- Week 7+ – RAG, Multi-Agent Systems, and Production AI Workflows
+- Week 7 – Retrieval-Augmented Generation (RAG)
+- Week 8 – Multi-Agent Workflows
+- Production AI Agent Integration
 
 ---
 
 ## Notes
 
-This repository is intended to document my internship progress and learning. Large datasets, API keys, and other sensitive files are stored locally and are not included in this repository.
+This repository documents my internship progress throughout the IDX Exchange AI Agentic Engineering Internship.
+
+Sensitive resources—including MLS datasets, API keys, and internal company materials—are stored locally and are excluded from version control.
